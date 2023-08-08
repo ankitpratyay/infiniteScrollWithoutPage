@@ -4,7 +4,7 @@ import Card from "./Card";
 const Photos=()=>{
     const[photos, setPhotos] = useState([])
     const [page,setPage]= useState(1);
-    const postPerPage= 8;
+    const postPerPage= 10;
     const getData=async ()=>{
         const data = await axios.get(`https://jsonplaceholder.typicode.com/photos`)
        // console.log(data.data)
